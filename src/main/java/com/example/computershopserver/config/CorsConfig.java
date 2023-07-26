@@ -18,6 +18,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(allowedOrigin)
+                        .allowedOrigins("https://server-computer.onrender.com")
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
